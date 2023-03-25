@@ -100,3 +100,6 @@ function locationErrorCallback(error) {
     },
   });
 }
+
+// https://15903d7f.weather-app-dps.pages.dev
+// Receiving the weather using the user's input and the user's current location
