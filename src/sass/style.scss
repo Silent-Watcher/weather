@@ -7,7 +7,7 @@
 // body.swal2-height-auto
 
 body {
-  font-family: 'Lilita One', cursive;
+
   background: #232323;
   background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
@@ -23,6 +23,7 @@ nav{
 }
 
 main{
+  font-family: 'Lilita One', cursive;
   border-radius: 13px;
   background-color: #2f3640e1;
   #name{
