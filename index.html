@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather App</title>
+    <!-- sweet alert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css">
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap -->
@@ -17,13 +19,16 @@
     <link rel="stylesheet" href="src/sass/style.scss" />
   </head>
   <body class="vh-100 vw-100 overflow-hidden">
+    <!-- main template -->
+    <pug src="src/pug/template.pug" />
+    <!------------------->
     <div class="container-fluid">
       <div class="container">
         <div class="row pt-5 align-items-center">
           <nav class="col-10">
             <div class = 'search-box d-inline-flex justify-content-center align-items-center'>
-              <input class = "search-text border-0  text-white fs-6 fw-normal" type="text" placeholder = "Search Anything">
-              <a href="#" class ="search-btn rounded-circle d-flex justify-content-center align-items-center text-decoration-none "><i class="fas fa-search"></i></a>
+              <input id="search_input" class = "search-text border-0  text-white fs-6 fw-normal" type="text" placeholder = "city or country...">
+              <button id="search_btn"  class ="search-btn rounded-circle d-flex justify-content-center align-items-center text-decoration-none border-0"><i class="fas fa-search"></i></button>
           </div>
           </nav>
           <section class="col-2 d-flex justify-content-center align-items-center">
@@ -34,16 +39,24 @@
       <div class="container">
         <div class="row mt-4">
           <main class="col-6 offset-3 mt-5 text-center text-white p-5 ">
-              <p id="location">Northampton, GB</p>
+              <!-- <p id="location">Northampton, GB</p>
               <p id="date">Thursday 10 January 2020</p>
               <h1 id="temperature">15&#8451;</h1>
-              <h3 id="state"><span>Sunny</span><span></span></h3>
-              <p class="mt-3"><span id="low_temp">13&#8451;</span> / <span id="high_temp">16&#8451;</span></p>
+              <h3 id="state">Sunny</h3>
+              <p class="mt-3"><span id="low_temp">13&#8451;</span> / <span id="high_temp">16&#8451;</span></p> -->
+              <p class="skeleton skeleton-text"></p>
+              <p class="skeleton skeleton-text"></p>
+              <p class="skeleton skeleton-text"></p>
+              <p class="skeleton skeleton-text"></p>
+              <p class="skeleton skeleton-text"></p>
+              <p class="skeleton skeleton-text"></p>
+             
           </main>
         </div>
       </div>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script type="module" src="src/js/app.js"></script>
 </html>

@@ -3,7 +3,8 @@
 // components
 @import "searchBox";
 @import "pulse";
-
+@import "skeletonLoad";
+// body.swal2-height-auto
 
 body {
   font-family: 'Lilita One', cursive;
@@ -12,6 +13,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: grayscale(28%) blur(2px);
+  &.swal2-height-auto{
+    height: 100vh!important;
+  }
 }
 
 nav{
