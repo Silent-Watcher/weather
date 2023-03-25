@@ -57,7 +57,7 @@ Start the server
 
 ## Feedback
 
-If you have any feedback, please reach out to us at alitabatabaee20@gmail.com
+If you have any feedback, please reach out to me at alitabatabaee20@gmail.com
 
 
 ## License
