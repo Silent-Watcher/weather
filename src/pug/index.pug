@@ -1,0 +1,27 @@
+.container-fluid
+  .container
+    .row.pt-5.align-items-center
+      nav.col-10
+        .search-box.d-inline-flex.justify-content-center.align-items-center
+          input#search_input.search-text.border-0.text-white.fs-6.fw-normal(type='text' placeholder='city or country...')
+          button#search_btn.search-btn.rounded-circle.d-flex.justify-content-center.align-items-center.text-decoration-none.border-0
+            i.fas.fa-search
+      section.col-2.d-flex.justify-content-center.align-items-center
+        a.pulse.rounded-circle(href='https://github.com/Silent-Watcher/weather')
+          lottie-player(src='https://assets1.lottiefiles.com/private_files/lf30_1ldonjtk.json' background='transparent' speed='.9' style='width: 90px; height: 90px' loop='' autoplay='')
+  .container.mt-3
+    p.text-center
+      | Weather data provided by 
+      a#openWeatherLink.fw-bold.text-decoration-none(href='') OpenWeather
+  .container
+    .row
+      main.col-8.offset-2.mt-3.text-center.text-white.p-5
+        p.skeleton.skeleton-text
+        p.skeleton.skeleton-text
+        p.skeleton.skeleton-text
+        p.skeleton.skeleton-text
+        p.skeleton.skeleton-text
+        p.skeleton.skeleton-text
+  .container
+    footer
+      p.text-center.text-warning.mt-4 made with 🧡 and ☕

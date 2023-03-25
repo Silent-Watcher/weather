@@ -37,69 +37,8 @@
     <link rel="stylesheet" href="src/sass/style.scss" />
   </head>
   <body class="vh-100 vw-100 overflow-hidden">
-    <!-- main template -->
     <pug src="src/pug/template.pug" />
-    <!------------------->
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row pt-5 align-items-center">
-          <nav class="col-10">
-            <div
-              class="search-box d-inline-flex justify-content-center align-items-center"
-            >
-              <input
-                id="search_input"
-                class="search-text border-0 text-white fs-6 fw-normal"
-                type="text"
-                placeholder="city or country..."
-              />
-              <button
-                id="search_btn"
-                class="search-btn rounded-circle d-flex justify-content-center align-items-center text-decoration-none border-0"
-              >
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
-          </nav>
-          <section
-            class="col-2 d-flex justify-content-center align-items-center"
-          >
-            <a
-              class="pulse rounded-circle"
-              href="https://github.com/Silent-Watcher/weather"
-              ><lottie-player
-                src="https://assets1.lottiefiles.com/private_files/lf30_1ldonjtk.json"
-                background="transparent"
-                speed=".9"
-                style="width: 90px; height: 90px"
-                loop
-                autoplay
-              ></lottie-player
-            ></a>
-          </section>
-        </div>
-      </div>
-      <div class="container mt-3">
-        <p class="text-center">Weather data provided by <a id="openWeatherLink" class="fw-bold text-decoration-none" href="">OpenWeather</a></p>
-      </div>
-      <div class="container">
-        <div class="row ">
-          <main class="col-8 offset-2 mt-3 text-center text-white p-5">
-            <p class="skeleton skeleton-text"></p>
-            <p class="skeleton skeleton-text"></p>
-            <p class="skeleton skeleton-text"></p>
-            <p class="skeleton skeleton-text"></p>
-            <p class="skeleton skeleton-text"></p>
-            <p class="skeleton skeleton-text"></p>
-          </main>
-        </div>
-      </div>
-      <div class="container">
-        <footer>
-          <p class="text-center text-warning mt-4">made with 🧡 and ☕</p>
-        </footer>
-      </div>
-    </div>
+    <pug src="src/pug/index.pug" />
   </body>
   <script src="https://cdn.jsdelivr.net/npm/kursor@0.1.6/dist/kursor.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
