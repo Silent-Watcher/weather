@@ -1,0 +1,34 @@
+.search-box {
+  background: #2f3640;
+  height: inherit;
+  border-radius: 40px;
+  padding: 10px;
+  &:hover {
+    > .search-text {
+      width: 240px;
+      padding: 0 20px;
+    }
+    > .search-btn {
+      background: #ffffff;
+      color: #000000;
+    }
+  }
+  .search-btn {
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    background: #2f3640;
+    transition: 0.4s;
+    cursor: pointer;
+    > i {
+      font-size: 20px;
+    }
+  }
+  .search-text {
+    background: none;
+    outline: none;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+  }
+}

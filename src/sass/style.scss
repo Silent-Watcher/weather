@@ -1,0 +1,18 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+// components
+@import "searchBox";
+
+// font-family: 'Lilita One', cursive;
+
+body {
+  background: #232323;
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav{
+    height: 60px;
+    
+}
