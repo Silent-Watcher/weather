@@ -88,8 +88,15 @@ function locationSuccessCallback(position) {
   });
 }
 function locationErrorCallback(error) {
-  console.log(error);
-  sendApiRequest(defaultCityName, false).then((data) => {
-    addApiResponseData(data);
+  Swal.fire({
+    title: 'Error!',
+    text: 'your location not found !',
+    icon: 'error',
+    confirmButtonText: 'ok',
+    didDestroy: () => {
+      sendApiRequest(defaultCityName, false).then((data) => {
+        addApiResponseData(data);
+      });
+    },
   });
 }
