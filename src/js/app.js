@@ -7,8 +7,8 @@ const searchBtn = $.querySelector('#search_btn');
 const template = $.querySelector('#main_template');
 const defaultCityName = 'Tehran';
 
-const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
-const apiKey = 'bb3f843336220fe5f3eab23198735e53';
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 searchBtn.addEventListener('click', async function (event) {
   event.preventDefault();
@@ -35,7 +35,6 @@ async function sendApiRequest(value, usePosition = false) {
     ? `lat=${value[0]}&lon=${value[1]}&appid=${apiKey}`
     : `q=${value}&appid=${apiKey}`;
   //
-  console.log(queryTemplate);
   return await fetch(`${apiUrl}?${queryTemplate}`)
     .then((res) => {
       if (res.status === 200) return res.json();
@@ -56,9 +55,9 @@ function addApiResponseData(data) {
   $.querySelector('#name').innerHTML = data.name || 'not found';
   $.querySelector('#temperature').innerHTML = `${convertFahrenheitToCelsius(
     data.main.temp
-  )}&#8451;` ;
+  )}&#8451;`;
   $.querySelector('#date').innerHTML = moment().format('dddd MMMM Do YYYY');
-  $.querySelector('#state').innerHTML = data.weather.at(0).main ;
+  $.querySelector('#state').innerHTML = data.weather.at(0).main;
   $.querySelector('#low_temp').innerHTML = `${convertFahrenheitToCelsius(
     data.main.temp_min
   )}&#8451;`;
@@ -79,7 +78,6 @@ window.addEventListener('load', function () {
 });
 
 function locationSuccessCallback(position) {
-  console.log(position);
   sendApiRequest(
     [position.coords.latitude, position.coords.longitude],
     true
