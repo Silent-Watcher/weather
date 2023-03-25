@@ -53,12 +53,12 @@ function addTemplate() {
 }
 
 function addApiResponseData(data) {
-  $.querySelector('#name').innerHTML = data.name;
+  $.querySelector('#name').innerHTML = data.name || 'not found';
   $.querySelector('#temperature').innerHTML = `${convertFahrenheitToCelsius(
     data.main.temp
-  )}&#8451;`;
+  )}&#8451;` ;
   $.querySelector('#date').innerHTML = moment().format('dddd MMMM Do YYYY');
-  $.querySelector('#state').innerHTML = data.weather.at(0).main;
+  $.querySelector('#state').innerHTML = data.weather.at(0).main ;
   $.querySelector('#low_temp').innerHTML = `${convertFahrenheitToCelsius(
     data.main.temp_min
   )}&#8451;`;
