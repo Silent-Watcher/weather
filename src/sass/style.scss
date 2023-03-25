@@ -25,6 +25,9 @@ nav{
 main{
   border-radius: 13px;
   background-color: #2f3640e1;
+  #name{
+    font-size: 4rem;
+  }
   #location{
     font-size: 35px;
   }
@@ -32,7 +35,7 @@ main{
     font-size: 18px;
   }
   #temperature{
-    font-size: 6rem;
+    font-size: 5rem;
   }
   #state{
     font-size: 2.4rem;
