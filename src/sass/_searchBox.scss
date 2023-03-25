@@ -1,11 +1,16 @@
 .search-box {
-  background: #2f3640;
+  background: #F44336;
+  width: 60px;
+  cursor: pointer;
   height: inherit;
   border-radius: 40px;
+  transition: .3s;
   padding: 10px;
   &:hover {
+    background: #2f3640;
+    width: inherit;
     > .search-text {
-      width: 240px;
+      width: 100%;
       padding: 0 20px;
     }
     > .search-btn {
@@ -17,7 +22,7 @@
     color: #ffffff;
     width: 40px;
     height: 40px;
-    background: #2f3640;
+    background: #F44336;
     transition: 0.4s;
     cursor: pointer;
     > i {
@@ -28,7 +33,11 @@
     background: none;
     outline: none;
     transition: 0.4s;
-    line-height: 40px;
+    line-height: 60px;
     width: 0px;
+    &::placeholder {
+      color: #ccc;
+      padding-left: 5px;
+    }
   }
 }
