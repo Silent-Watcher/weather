@@ -6,15 +6,14 @@ using the user's input and geographical location to collect weather information
 
 
 
-## Appendix
-
-Weather data provided by [openWeather map](https://openweathermap.org/)
-
-
 ## Demo
 
 https://weather-app-dps.pages.dev/
 
+## Prerequisites
+In order to run this project, you will need to have the following installed on your computer:
+- nodejs
+- yarn | npm
 ## Run Locally
 
 Clone the project
@@ -49,6 +48,13 @@ Start the server
 ![App Screenshot](https://iili.io/HNcddGa.png)
 
 
+## Acknowledgements
+
+ - [The build tool and development server.](https://vitejs.dev/)
+ - [ The weather data API used in the project.](https://openweathermap.org/api)
+ - [The package manager used in the project.](https://yarnpkg.com/)
+
+
 ## Feedback
 
 If you have any feedback, please reach out to us at alitabatabaee20@gmail.com
@@ -58,3 +64,4 @@ If you have any feedback, please reach out to us at alitabatabaee20@gmail.com
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+This project is licensed under the MIT License. See the LICENSE file for details.
