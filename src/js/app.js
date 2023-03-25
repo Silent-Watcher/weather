@@ -53,21 +53,21 @@ function addTemplate() {
 
 function addApiResponseData(data) {
   $.querySelector('#name').innerHTML = data.name || 'not found';
-  $.querySelector('#temperature').innerHTML = `${convertFahrenheitToCelsius(
+  $.querySelector('#temperature').innerHTML = `${convertKelvinToCelsius(
     data.main.temp
   )}&#8451;`;
   $.querySelector('#date').innerHTML = moment().format('dddd MMMM Do YYYY');
   $.querySelector('#state').innerHTML = data.weather.at(0).main;
-  $.querySelector('#low_temp').innerHTML = `${convertFahrenheitToCelsius(
+  $.querySelector('#low_temp').innerHTML = `${convertKelvinToCelsius(
     data.main.temp_min
   )}&#8451;`;
-  $.querySelector('#high_temp').innerHTML = `${convertFahrenheitToCelsius(
+  $.querySelector('#high_temp').innerHTML = `${convertKelvinToCelsius(
     data.main.temp_max
   )}&#8451;`;
 }
 
-function convertFahrenheitToCelsius(temp) {
-  return ((temp - 32) / 1.8).toFixed(2);
+function convertKelvinToCelsius(temp) {
+  return (temp - 273).toFixed(2);
 }
 
 window.addEventListener('load', function () {
@@ -102,5 +102,5 @@ function locationErrorCallback(error) {
 new kursor({
   type: 1,
   color: '#F44336',
-  removeDefaultCursor: true
+  removeDefaultCursor: true,
 });
