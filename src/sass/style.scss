@@ -49,3 +49,11 @@ main{
 .swal2-container{
   height: 100vh!important;
 }
+
+#openWeatherLink{
+  color: #F44336;
+  transition: .3s;
+  &:hover{
+    color: #b92d23;
+  }
+}
