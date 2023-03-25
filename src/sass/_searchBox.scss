@@ -25,6 +25,9 @@
     background: #F44336;
     transition: 0.4s;
     cursor: pointer;
+    &:hover{
+      color: #F44336;
+    }
     > i {
       font-size: 20px;
     }

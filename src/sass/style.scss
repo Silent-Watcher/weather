@@ -4,16 +4,36 @@
 @import "searchBox";
 @import "pulse";
 
-// font-family: 'Lilita One', cursive;
 
 body {
+  font-family: 'Lilita One', cursive;
   background: #232323;
   background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  backdrop-filter: grayscale(28%) blur(2px);
 }
 
 nav{
     height: 60px;
-    
+}
+
+main{
+  border-radius: 13px;
+  background-color: #2f3640e1;
+  #location{
+    font-size: 35px;
+  }
+  #date{
+    font-size: 18px;
+  }
+  #temperature{
+    font-size: 6rem;
+  }
+  #state{
+    font-size: 2.4rem;
+  }
+  &:last-child{
+    font-size: 25px;
+  }
 }
