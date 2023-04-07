@@ -4,7 +4,9 @@
 using the user's input and geographical location to collect weather information
 
 
+## Screenshots
 
+![App Screenshot](https://iili.io/HNcddGa.png)
 
 ## Demo
 
@@ -41,12 +43,6 @@ Start the server
   npm run dev
   yarn dev
 ```
-
-
-## Screenshots
-
-![App Screenshot](https://iili.io/HNcddGa.png)
-
 
 ## Acknowledgements
 
