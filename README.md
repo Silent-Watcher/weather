@@ -4,7 +4,7 @@
 using the user's input and geographical location to collect weather information
 
 
-## Screenshots
+## Overview
 
 ![App Screenshot](https://iili.io/HNcddGa.png)
 
