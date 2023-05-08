@@ -10,7 +10,7 @@ using the user's input and geographical location to collect weather information
 
 ## Demo
 
-https://weather-app-dps.pages.dev/
+https://weatherdevwithapi.netlify.app/
 
 ## Prerequisites
 In order to run this project, you will need to have the following installed on your computer:
