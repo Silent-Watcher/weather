@@ -12,7 +12,7 @@ export default defineConfig({
       manifest: {
         "icons": [
           {
-            src: 'weather-icon.png',
+            src: './weather-icon.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable',
