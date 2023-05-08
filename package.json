@@ -14,6 +14,7 @@
   "dependencies": {
     "moment": "^2.29.4",
     "sass": "^1.60.0",
-    "vite-plugin-pug": "^0.3.2"
+    "vite-plugin-pug": "^0.3.2",
+    "vite-plugin-pwa": "^0.14.7"
   }
 }
