@@ -10,8 +10,10 @@ using the user's input and geographical location to collect weather information
 ![App Screenshot](https://iili.io/HNcddGa.png)
 
 ## Demo
-
+### netlify
 https://weatherdevwithapi.netlify.app/
+### GitHub pages 
+https://silent-watcher.github.io/weather/
 
 ## Prerequisites
 In order to run this project, you will need to have the following installed on your computer:
