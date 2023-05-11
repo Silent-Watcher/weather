@@ -6,6 +6,7 @@ const options = { pretty: true }; // FIXME: pug pretty is deprecated!
 const locals = { name: 'My Pug' };
 
 export default defineConfig({
+  base: "/weather",
   plugins: [
     pugPlugin(options, locals),
     VitePWA({
